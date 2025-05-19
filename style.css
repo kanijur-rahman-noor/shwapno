@@ -190,7 +190,7 @@ video {
 
 
 img.responsive-img {
-  width: 90vw;
+  width: 320px;
     border-radius: 20px;
     height: auto;
 }
