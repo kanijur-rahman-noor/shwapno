@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captive Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <div class="popup-close" onclick="closePopup()">&times;</div>
+      <img src="./assets/pop.webp" class="responsive-img-pop">
+    </div>
+  </div>
+
+  <!-- Page 1 -->
+  <div id="page1" class="page active">
+    <div class="logo"><img src="./assets/logo.png"></div>
+    <p class="get-yfi" style="font-size: small;">----- Get Free Y-Fi -----</p>
+    <div class="social-buttons">
+      <div  class="social-icons stroke">
+        <a ><i class="fas fa-phone"></i></a>
+        <a ><i class="fab fa-facebook-f"></i></a>
+        <a ><i class="fab fa-google"></i></a>
+        <a ><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+   <div class="bg-layer">
+    <input  type="text" placeholder="Email or Mobile Number" />
+    <p>----- Sponsored by -----</p>
+    <div class="ad-box">
+
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide"><img src="./assets/1.jpg" alt="Image 1"></div>
+          <div class="carousel-slide"><img src="./assets/2.jpg" alt="Image 2"></div>
+          <div class="carousel-slide"><img src="./assets/3.png" alt="Image 3"></div>
+          <div class="carousel-slide"><img src="./assets/4.jpg" alt="Image 4"></div>
+          <div class="carousel-slide"><img src="./assets/5.jpg" alt="Image 5"></div>
+        </div>
+      </div>
+
+      <!-- <ins data-freeyfi-slotid="3" data-freeyfi-ct0="%%CLICK_URL_UNESC%%" data-freeyfi-id="F7941D4446A4EC62B5E5472A97587">
+
+      </ins>
+      <script async="" src="//adserver.freeyfi.com/async.js" type="text/javascript"></script> -->
+    </div>
+    <button class="connect-button" onclick="goToPage2()">CONNECT</button>
+   </div>
+
+
+   <span style="  font-size: small; margin-bottom: 20px;
+" class="ff">Powered by Free Y-Fi, a project of Adcelerete Limited</span>
+</div>
+  </div>
+
+  <!-- Page 2 -->
+  <div id="page2" class="page">
+    <div class="timer-circle" ><span id="timer">10</span> seconds remaining</div> 
+    <div class="video-wrapper">
+      <video 
+        src="./assets/vid.mp4" 
+        autoplay 
+        muted 
+        playsinline 
+        
+        preload="auto">
+      </video>
+    </div>
+  </br>
+</br>
+    <div class="carousel-container2">
+      <div class="carousel-track2" id="carousel-track2">
+        <div class="carousel-slide2"><img src="./assets/6.png" alt="Image 1"></div>
+        <div class="carousel-slide2"><img src="./assets/7.png" alt="Image 2"></div>
+        <div class="carousel-slide2"><img src="./assets/8.png" alt="Image 3"></div>
+        <div class="carousel-slide2"><img src="./assets/9.png" alt="Image 4"></div>
+        <div class="carousel-slide2"><img src="./assets/10.png" alt="Image 5"></div>
+      </div>
+    </div>
+
+    <!-- <ins data-freeyfi-slotid="3" data-freeyfi-ct0="%%CLICK_URL_UNESC%%" data-freeyfi-id="F7941D4446A4EC62B5E5472A97587">
+
+    </ins>
+    <script async="" src="//adserver.freeyfi.com/async.js" type="text/javascript"></script> -->
+ 
+  </div>
+<div id="extra" style="display: none;">
+  <div  id="page-connected" class="page">
+    <img src="./assets/bird.gif" alt="Loading Bird" class="hero-bird-gif" />
+
+  </div>
+</div>
+ 
+
+  <!-- Page 3 -->
+  <div id="page3" class="page">
+    <div class="logo"><img src="./assets/logo.png"></div>
+    <div class="connected">
+      <h2 style="font-size: small; color:#df0000" class="" >You are now connected</h2>
+
+<img style="width: 30%;" src="./assets/f_logo.png">
+    </div>
+    <div  class="Today’s Special">
+      <h3 style="font-size: small; color:#df0000; 
+    float: left;
+    margin-left: 22px;" >Special Offer</h3>
+      <img src="./assets/today.jpeg" alt="Special Offer Image" class="responsive-img" />
+    </div>
+     <div class="carousel-container3" style="    margin-top: 20px;
+    border-radius: 20px;
+">
+      <div class="carousel-track2" id="carousel-track3">
+        <div class="carousel-slide3"><img src="./assets/6.png" alt="Image 1"></div>
+        <div class="carousel-slide3"><img src="./assets/7.png" alt="Image 2"></div>
+        <div class="carousel-slide3"><img src="./assets/8.png" alt="Image 3"></div>
+        <div class="carousel-slide3"><img src="./assets/9.png" alt="Image 4"></div>
+        <div class="carousel-slide3"><img src="./assets/10.png" alt="Image 5"></div>
+      </div>
+    </div>
+<img class="pop-loop" style="width: 85%; margin-top: 28px;" src="./assets/all_offer.png">
+
+    <!-- <button class="menu-button">See Full Menu</button> -->
+
+    <!-- Footer Markup -->
+    <div class="ff">
+  <div class="footer">
+    <div class="footer-flex">
+      <div class="footer-hours">
+        <h3>Always Here for You</h3>
+        <p>Call Us: 16469 (9am-9pm, Everyday)</p>
+        <p>Email Us: <span class="hotline">queries@acilogistics.net</span></p>
+      </div>
+
+      <div class="social-icons-foot">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"></div>
+</div>
+
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
